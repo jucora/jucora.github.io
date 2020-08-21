@@ -62,17 +62,48 @@ p.lead {
 .social-icons {
   text-align: center;
 }
+
+@keyframes linkAnimation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
 .social-icons a {
+  animation: linkAnimation 5s ease-in-out;
+  -moz-animation: linkAnimation 5s ease-in-out;
+  -ms-animation: linkAnimation 5s ease-in-out;
+  -webkit-animation: linkAnimation 5s ease-in-out;
+  -o-animation: linkAnimation 5s ease-in-out;
+
+  border: 1px solid #fff;
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  /*background-color: #495057;*/
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+}
+.linkedin {
+  background-color: #00a0dc;
+}
+.github {
+  background-color: #333;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.facebook {
+  background-color: #3b5998;
 }
 .social-icons a:last-child {
   margin-right: 0;
