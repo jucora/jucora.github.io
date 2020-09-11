@@ -1,7 +1,7 @@
 particlesJS({
   particles: {
     number: {
-      value: 100,
+      value: 30,
       density: {
         enable: true,
         value_area: 800
@@ -20,13 +20,13 @@ particlesJS({
         nb_sides: 5
       },
       image: {
-        src: "img/binary.png",
+        src: "",
         width: 100,
         height: 100
       }
     },
     opacity: {
-      value: 0.5,
+      value: 0.2,
       random: false,
       anim: {
         enable: false,
@@ -49,7 +49,7 @@ particlesJS({
       enable: true,
       distance: 150,
       color: "#ffffff",
-      opacity: 0.4,
+      opacity: 0.5,
       width: 1
     },
     move: {
